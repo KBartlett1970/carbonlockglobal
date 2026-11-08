@@ -14,57 +14,100 @@
             line-height: 1.6;
         }
 
+        /* NAVIGATION */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
+            padding: 25px 50px;
             border-bottom: 1px solid #eee;
         }
 
         header img {
-            height: 400px;
+            height: 120px; /* Bigger logo */
         }
 
         nav a {
-            margin-left: 20px;
+            margin-left: 25px;
             text-decoration: none;
             color: #222;
             font-weight: bold;
+            font-size: 15px;
         }
 
+        /* HERO SECTION */
+        .hero {
+            padding: 120px 40px;
+            text-align: center;
+            background: #f5f8ff;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 28px;
+            background: #0044cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
         section {
-            padding: 60px 40px;
+            padding: 80px 40px;
             max-width: 900px;
             margin: auto;
         }
 
-        h1, h2 {
-            margin-top: 0;
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: #f9f9f9;
+        section p {
+            font-size: 18px;
+            color: #444;
         }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .learn-more {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #0044cc;
+            text-decoration: none;
         }
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
-
+        /* FOOTER */
         footer {
-            text-align: center;
-            padding: 40px;
             background: #f2f2f2;
-            margin-top: 40px;
+            padding: 50px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 8px 0;
+            color: #555;
         }
     </style>
 </head>
@@ -74,44 +117,77 @@
 <header>
     <img src="logo.png" alt="CarbonLock Global Logo">
     <nav>
-        <a href="#about">About</a>
-        <a href="#solution">Solution</a>
-        <a href="#impact">Impact</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#purpose">PURPOSE</a>
+        <a href="#work">WHAT WE DO</a>
+        <a href="#impact">IMPACT</a>
+        <a href="#contact">CONTACT</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
     <h1>CarbonLock Global</h1>
-    <p><em>Engineered biology for a stable climate.</em></p>
-    <p>We are developing a new class of land‑based algae systems that convert atmospheric CO₂ into stable, buried biomass — delivering permanent, verifiable, infrastructure‑grade carbon removal.</p>
+    <h2>For our Future</h2>
+
+    <p>
+        Engineered biology for a stable climate.  
+        We develop land‑based algae systems that convert atmospheric CO₂ into stable, buried biomass — delivering permanent, verifiable, infrastructure‑grade carbon removal.
+    </p>
+
+    <a class="cta-button" href="#work">EXPLORE OUR WORK →</a>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
     <h2>About Us</h2>
-    <p>CarbonLock Global is building engineered biological sinks designed for global deployment and long‑term climate stability. Our approach integrates biology, sunlight, seawater, nutrients, and proven civil engineering methods to create a scalable, permanent carbon removal platform.</p>
-    <p>Founded in Australia by Kevin, a senior dams engineer with nearly 40 years of experience in large‑scale water infrastructure, CarbonLock Global combines deep engineering expertise with innovative biological design to deliver reliable, measurable negative emissions.</p>
+    <p>
+        CarbonLock Global is building engineered biological sinks designed for global deployment and long‑term climate stability. Our approach integrates biology, sunlight, seawater, nutrients, and proven civil engineering methods to create a scalable, permanent carbon removal platform.
+    </p>
+    <p>
+        Founded in Australia by Kevin, a senior dams engineer with nearly 40 years of experience in large‑scale water infrastructure, CarbonLock Global combines deep engineering expertise with innovative biological design to deliver reliable, measurable negative emissions.
+    </p>
 </section>
 
-<section id="solution">
-    <h2>Our Solution</h2>
-    <p>Our system uses sunlight, seawater or brine, wastewater nutrients, and engineered ponds to grow high‑productivity algae. The resulting biomass is buried in controlled anaerobic conditions, where it remains stable for centuries. During burial, methane is captured and used as a renewable energy source, creating a closed‑loop carbon removal process.</p>
-    <p>This engineered biological sink captures CO₂, converts it into biomass, buries it safely, recovers methane for energy, and locks carbon away permanently. It is biological in function, but engineered like infrastructure.</p>
+<!-- PURPOSE -->
+<section id="purpose">
+    <h2>Our Purpose</h2>
+    <p>
+        We are working toward a future where engineered biological sinks provide permanent, measurable, and globally deployable carbon removal — supporting climate stability for generations.
+    </p>
+    <a class="learn-more" href="#impact">LEARN MORE →</a>
 </section>
 
+<!-- WHAT WE DO -->
+<section id="work">
+    <h2>What We Do</h2>
+    <p>
+        Our system uses sunlight, seawater or brine, wastewater nutrients, and engineered ponds to grow high‑productivity algae. The resulting biomass is buried in controlled anaerobic conditions, where it remains stable for centuries. Methane generated during burial is captured and used as renewable energy.
+    </p>
+    <a class="learn-more" href="#solution">LEARN MORE →</a>
+</section>
+
+<!-- IMPACT -->
 <section id="impact">
-    <h2>Impact</h2>
-    <p>CarbonLock Global is designed for gigaton‑scale deployment, permanent carbon storage, low‑cost operation, measurable and auditable carbon flows, and compatibility with existing civil engineering practices. Our goal is to deliver a globally deployable carbon removal system that supports climate stability for generations.</p>
+    <h2>Our Impact</h2>
+    <p>
+        CarbonLock Global is designed for gigaton‑scale deployment, permanent carbon storage, low‑cost operation, measurable and auditable carbon flows, and compatibility with existing civil engineering practices.
+    </p>
+    <a class="learn-more" href="#contact">LEARN MORE →</a>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>For enquiries, partnerships, or early collaboration:</p>
-    <p><strong>info@carbonlockglobal.com</strong></p>
+    <h2>Ready to Start a Conversation?</h2>
+    <p><strong>CarbonLock Global • For our Future</strong></p>
+    <p>Email: info@carbonlockglobal.com</p>
+    <p>Location: Australia</p>
+    <a class="cta-button" href="mailto:info@carbonlockglobal.com">CONTACT US →</a>
 </section>
 
 <footer>
-    © 2026 CarbonLock Global
+    <p>PRIVACY • TERMS • CAREERS • NEWS • SOCIAL LINKS</p>
+    <p>carbonlockglobal.com © 2026</p>
 </footer>
 
 </body>
